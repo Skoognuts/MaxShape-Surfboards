@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+html,
+body {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  font-family: "open sans", sans-serif;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 header {
   background-image: url(/assets/maxshape-header-background.jpg);
   text-shadow: 2px 2px 4px #2f2e2e;
@@ -13,27 +27,69 @@ header .nav-link {
   font-weight: 700;
 }
 
-header .nav-link.active {
+header .nav-link.active,
+header .nav-link.active:hover {
   color: #fffefd;
 }
 
-header .nav-link:hover {
-  color: #5a5a5a;
+header .nav-link:hover,
+header .logo-wrapper:hover {
+  color: #2f2e2e;
+  filter: drop-shadow(0 0 5px #fffefd);
 }
 
-header .border-xxl-right {
+header .border-xl-right {
   border-right: 1px solid #2f2e2e;
 }
 
+header svg,
+header .nav-link,
+header .logo-wrapper {
+  transition-duration: 250ms;
+}
+
+header svg:hover {
+  filter: drop-shadow(0 0 5px #fffefd);
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Anton', sans-serif;
+  text-shadow: 2px 2px 4px #2f2e2e;
+}
+
+h1 {
+  font-size: 70px;
+  text-align: center
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
 footer {
-  position: relative;
+  position: absolute;
   bottom: 0;
+  width: 100%;
   background: rgba(50, 69, 89, 0.7);
   color: #fffefd;
   font-size: 0.8rem;
   font-weight: 700;
+  padding-inline: 10px;
+  font-size: 10px;
 }
 
 footer a {
   color: #fffefd;
+}
+
+@media screen and (min-width: 650px) {
+  footer {
+    font-size: 12px;
+  }
 }
