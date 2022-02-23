@@ -1,3 +1,47 @@
 body {
   background-image: url(/assets/maxshape-background-contact.jpg);
 }
+
+#contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 15px;
+  border-radius: 20px;
+  margin-bottom: 150px;
+}
+
+.fb-page,
+.mapouter {
+  box-shadow: 0 0 10px #2f2e2e;
+}
+
+.contact-speech {
+  padding-inline: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 15px;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 650px) {
+  .contact {
+    padding: 25px;
+    margin-bottom: 30px;
+  }
+}

@@ -1,3 +1,55 @@
 body {
   background-image: url(/assets/maxshape-background-eco-boards.jpg);
 }
+
+#eco-boards-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.eco-boards {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 15px;
+  border-radius: 20px;
+  margin-bottom: 150px;
+}
+
+.deco-list,
+.rail-list {
+  justify-content: center;
+}
+
+.deco-item,
+.rail-item,
+.deco-item > p,
+.rail-item > p {
+  text-align: center;
+}
+
+.deco-item > p,
+.rail-item > p {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.deco-img,
+.rail-img {
+  border: 1px solid #2f2e2e;
+  margin-bottom: 10px;
+}
+
+.rail-img {
+  max-width: 300px;
+  max-height: 200px;
+}
+
+@media screen and (min-width: 650px) {
+  .eco-boards {
+    padding: 25px;
+    margin-bottom: 30px;
+  }
+}

@@ -1,3 +1,30 @@
 body {
   background-image: url(/assets/maxshape-background-cgu.jpg);
 }
+
+#cgu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cgus {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 15px;
+  margin-bottom: 150px;
+  border-radius: 20px;
+}
+
+a,
+a:hover {
+  color: #023e8a;
+}
+
+@media screen and (min-width: 650px) {
+  .cgus {
+    padding: 25px;
+  }
+}

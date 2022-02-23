@@ -1,3 +1,20 @@
 body {
   background-image: url(/assets/maxshape-background-index.jpg);
 }
+
+#index-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.index-video-loop {
+  width: 90%;
+  max-width: 1080px;
+  margin-top: 40px!important;
+  border-radius: 20px;
+}
+
+.shadow-light {
+  box-shadow: 0 0 20px #fffefd;
+}
