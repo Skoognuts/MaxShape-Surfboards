@@ -13,6 +13,21 @@
 </head>
 <body>
   
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : 'maxshapesurfboards',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v13.0'
+    });
+  };
+</script>
+<script 
+  async defer crossorigin="anonymous"
+  src="https://connect.facebook.net/en_US/sdk.js">
+</script>
+
 <header>
   <nav class="navbar navbar-expand-xl row d-flex flex-row shadow">
     <div class="logo-wrapper col-2 ms-3 ms-xxl-0 d-none d-xxl-flex justify-content-center">
@@ -58,7 +73,84 @@
 </header>
 
 <main id="contact-content">
-  
+  <h1>CONTACT</h1>
+  <div class="contact">
+    <div class="row mb-4">
+      <h2 class="mb-4 ps-md-5">Coordonnées :</h2>
+      <div class="col-12 col-md-6 ps-md-5">
+        <address>
+          <p><strong>Adresse : </strong>101 Chemin du Pey de l'Ancre<br>40660 Messanges</p>
+          <p><strong>Téléphone : </strong><a href="mailto:maxshape@hotmail.fr">maxshape@hotmail.fr</a></p>
+          <p><strong>E-mail : </strong><a href="tel:+33699724613">06 99 72 46 13</a></p>
+        </address>
+      </div>
+      <div class="col-12 col-md-6 text-center text-md-end">
+        <div
+          class="fb-page me-md-5"
+          data-href="https://www.facebook.com/maxshapeboards"
+          data-width="300"
+          data-height=""
+          data-small-header="false"
+          data-adapt-container-width="true"
+          data-hide-cover="false"
+          data-show-facepile="true">
+          <blockquote cite="https://www.facebook.com/maxshapeboards" class="fb-xfbml-parse-ignore">
+            <a href="https://www.facebook.com/maxshapeboards">Max Shape</a>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-4">
+      <div class="col-12 col-lg-7 d-flex justify-content-center justify-content-lg-start">
+        <div class="mapouter ms-lg-4 mb-4">
+          <div class="gmap_canvas">
+            <iframe
+              class="d-block d-md-none"
+              width="300"
+              height="200"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=101%20Chemin%20du%20Pey%20de%20l'Ancre%2040660%20Messanges&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0">
+            </iframe>
+            <iframe
+              class="d-none d-md-block"
+              width="500"
+              height="300"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=101%20Chemin%20du%20Pey%20de%20l'Ancre%2040660%20Messanges&t=&z=17&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0">
+            </iframe>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-5 ps-lg-5 ps-xl-0 pe-lg-5 contact-speech">
+        <p>Pour toute demande de devis gratuit, merci de remplir le formulaire ci-dessous afin de cibler au mieux vos attentes. Je reviendrai ensuite vers vous pour affiner votre demande dans les plus brefs délais.</p>
+        <p>> Le délai de fabrication est compris entre 2 et 3 mois.</p>
+      </div>
+    </div>
+
+    <form name="contact" method="POST" data-netlify="true">
+      <h2 class="mb-4 ps-md-5">Demande de devis :</h2>
+    </form>
+  </div>
+
+  <nav class="navbar justify-content-center">
+    <a class="nav-link border-gold-right" href="/">HOME</a>
+    <a class="nav-link border-gold-right" href="/a-propos">À PROPOS</a>
+    <a class="nav-link border-gold-right" href="/blog">BLOG</a>
+    <a class="nav-link border-gold-right" href="/models">MODELES</a>
+    <a class="nav-link border-gold-right" href="/eco-boards">ECO-BOARDS</a>
+    <a class="nav-link border-gold-right" href="/galerie">GALERIE</a>
+    <a class="nav-link active border-gold-right" href="/contact">CONTACT</a>
+    <a class="nav-link" href="/stages">STAGES</a>
+  </nav>
 </main>
 
 <footer class="pt-2 pb-1 text-center">
