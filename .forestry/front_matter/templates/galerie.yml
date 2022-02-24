@@ -5,7 +5,7 @@ fields:
 - name: photo
   type: file
   config:
-    maxSize: 2
+    maxSize: 4
   label: Photo
 - name: description
   type: text
