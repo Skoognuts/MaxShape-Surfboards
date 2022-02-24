@@ -9,7 +9,18 @@ galeryClass: active
 {% include 'header.njk' %}
 
 <main id="galery-content">
-  
+  <h1>GALERIE</h1>
+  <div class="galery">
+    <div class="galeryShow">
+      {% for photo in collections.galerie %}
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <img src="{{ photo.data.photo | url }}" alt="{{ photo.data.description | safe }}">
+          </div>
+        </div>
+      {% endfor %}
+  </div>
+  </div>
 </main>
 
 {% include 'footer.njk' %}
