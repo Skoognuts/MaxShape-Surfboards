@@ -12,3 +12,5 @@ fields:
   config:
     required: true
   label: Description
+pages:
+- src/content/galerie/galerie_001.md
