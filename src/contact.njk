@@ -88,7 +88,236 @@ contactClass: active
     </div>
 
     <form name="contact" method="POST" data-netlify="true">
-      <h2 class="mb-4 ps-md-5">Demande de devis :</h2>
+      <h2 class="mb-4">Demande de devis :</h2>
+      <div class="row">
+        <div class="col-12 col-md-6 required">
+          <input type="text" name="Nom" placeholder=" Nom / Prénom" aria-required="true" required />
+        </div>
+        <div class="col-12 col-md-6 required">
+          <select class="surf-level" name="Niveau" aria-required="true" required>
+            <option value="Aucun"> Niveau de Surf</option>
+            <option value="Debutant">Débutant</option>
+            <option value="Intermediaire">Intermédiaire</option>
+            <option value="Confirme">Confirmé</option>
+            <option value="Expert">Expert</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <input type="tel" name="Telephone" placeholder=" Téléphone" />
+        </div>
+        <div class="col-12 col-md-6">
+          <input type="text" name="Poids-Taille" placeholder=" Poids / Taille (Optionnel)" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 required">
+          <input type="email" name="Email" placeholder=" E-mail" aria-required="true" required />
+        </div>
+        <div class="col-12 col-md-6 sav">
+          <input type="checkbox" id="sav" name="SAV" />
+          <label for="sav"> SAV / Réparation</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 required">
+          <textarea type="text" name="Description" placeholder=" Description" rows="6" aria-required="true" required></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <select name="Modele" class="model">
+            <option value="Aucun">Modèle</option>
+            <option value="One Foot">One Foot - 1050€</option>
+            <option value="Vagabond">Vagabond - 1050€</option>
+            <option value="Rice">Rice - 1050€</option>
+            <option value="Toy">Toy - 940€</option>
+            <option value="Single">Single - 880€</option>
+            <option value="Eggy">Eggy - 840€</option>
+            <option value="Magic Carpet">Magic Carpet - 850€</option>
+            <option value="Fish">Fish - 830€</option>
+            <option value="Flying Fish">Flying Fish - 850€</option>
+            <option value="Ufli">Ufli - 800€</option>
+            <option value="Drim">Drim - 800€</option>
+            <option value="CUSTOM">CUSTOM - Sur Devis</option>
+          </select>
+        </div>
+      </div>
+      <h3>Caractéristiques : </h3>
+      <h4>Dimensions <small>(en pieds et pouces)</small></h4>
+      <div class="row">
+        <div class="col-12 col-md-6 double-select">
+          <label for="longueur"> Longueur </label>
+          <div class="double-select-container">
+            <select name="Longueur-Pieds" id="longueur">
+              <option value="Aucun">Pieds</option>
+              <option value="< 5 '">< 5 '</option>
+              <option value="5 '">5 '</option>
+              <option value="6 '">6 '</option>
+              <option value="7 '">7 '</option>
+              <option value="8 '">8 '</option>
+              <option value="9 '">9 '</option>
+              <option value="10 '">10 '</option>
+              <option value="> 10 '">> 10 '</option>
+            </select>
+            <select name="Longueur-Pouces" id="longueur">
+              <option value="Aucun">Pouces</option>
+              <option value="0 &quot;">0 "</option>
+              <option value="1 &quot;">1 "</option>
+              <option value="2 &quot;">2 "</option>
+              <option value="3 &quot;">3 "</option>
+              <option value="4 &quot;">4 "</option>
+              <option value="5 &quot;">5 "</option>
+              <option value="6 &quot;">6 "</option>
+              <option value="7 &quot;">7 "</option>
+              <option value="8 &quot;">8 "</option>
+              <option value="9 &quot;">9 "</option>
+              <option value="10 &quot;">10 "</option>
+              <option value="11 &quot;">11 "</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 double-select">
+          <label for="largeur"> Largeur </label>
+          <div class="double-select-container">
+            <select name="Largeur-Pouces" id="largeur">
+              <option value="Aucun">Pouces</option>
+              <option value="< 18 '">< 18 '</option>
+              <option value="18 '">18 '</option>
+              <option value="19 '">19 '</option>
+              <option value="20 '">20 '</option>
+              <option value="21 '">21 '</option>
+              <option value="22 '">22 '</option>
+              <option value="23 '">23 '</option>
+              <option value="> 23 '">> 23 '</option>
+            </select>
+            <select name="Largeur-8eme-Pouces" id="largeur">
+              <option value="Aucun">1 / 8 "</option>
+              <option value="0/8 &quot;">0/8 "</option>
+              <option value="1/8 &quot;">1/8 "</option>
+              <option value="1/4 &quot;">1/4 "</option>
+              <option value="3/8 &quot;">3/8 "</option>
+              <option value="1/2 &quot;">1/2 "</option>
+              <option value="5/8 &quot;">5/8 "</option>
+              <option value="3/4 &quot;">3/4 "</option>
+              <option value="7/8 &quot;">7/8 "</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 double-select">
+          <label for="epaisseur"> Epaisseur </label>
+          <div class="double-select-container">
+            <select name="Epaisseur-Pouces" id="epaisseur">
+              <option value="Aucun">Pouces</option>
+              <option value="2 &quot;">2 "</option>
+              <option value="3 &quot;">3 "</option>
+            </select>
+            <select name="Epaisseur-8eme-Pouces" id="epaisseur">
+              <option value="Aucun">1 / 8 "</option>
+              <option value="0/8 &quot;">0/8 "</option>
+              <option value="1/8 &quot;">1/8 "</option>
+              <option value="1/4 &quot;">1/4 "</option>
+              <option value="3/8 &quot;">3/8 "</option>
+              <option value="1/2 &quot;">1/2 "</option>
+              <option value="5/8 &quot;">5/8 "</option>
+              <option value="3/4 &quot;">3/4 "</option>
+              <option value="7/8 &quot;">7/8 "</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <select name="Tail" class="tail">
+            <option value="Aucun">Tail</option>
+            <option value="Pin">Pin</option>
+            <option value="Round Pin">Round Pin</option>
+            <option value="Round">Round</option>
+            <option value="Square">Square</option>
+            <option value="Squash">Squash</option>
+            <option value="Diamond">Diamond</option>
+            <option value="Fish">Fish</option>
+            <option value="Swallow">Swallow</option>
+            <option value="Moon Square">Moon Square</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <select name="Rail" class="rail">
+            <option value="Aucun">Rail</option>
+            <option value="Liège">Liège (Inclus)</option>
+            <option value="Paulownia 5/7">Paulownia 5' ~ 7'</option>
+            <option value="Paulownia 7/9">Paulownia 7' ~ 9'</option>
+            <option value="Paulownia >9">Paulownia > 9'</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <select name="Derives" class="derives">
+            <option value="Aucun">Dérives</option>
+            <option value="Single">Single</option>
+            <option value="2 + 1">2 + 1</option>
+            <option value="Twin">Twin</option>
+            <option value="Thruster">Thruster</option>
+            <option value="Quatro (+20 euros)">Quatro (+20 €)</option>
+            <option value="Cinquo (+30 euros)">Cinquo (+30 €)</option>
+          </select>
+        </div>
+        <div class="col-12 col-md-6">
+          <select name="Derive-Fixe-Boitier" class="deriv-box">
+            <option value="Aucun">Dérives fixes ou Boitiers</option>
+            <option value="Fixe">Fixe</option>
+            <option value="Future (préconisé)">Future (préconisé)</option>
+            <option value="FCS X2">FCS X2</option>
+            <option value="FCS Fusion">FCS Fusion</option>
+          </select>
+        </div>
+      </div>
+      <h3 class="deco">Décorations : </h3>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <select name="Lattage" class="lattage">
+            <option value="Aucun">Lattage</option>
+            <option value="1 : 40 €">1 : 40 €</option>
+            <option value="2 : 60 €">2 : 60 €</option>
+            <option value="3 : 80 €">3 : 80 €</option>
+            <option value="4 : 100 €">4 : 100 €</option>
+            <option value="+ de 4 : Sur devis">+ de 4 : Sur devis</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 pad">
+          <input type="checkbox" id="pad" name="Pad-Liege" />
+          <label for="pad"> PAD Liège ( < 7' : 60€ / > 7' : 90€ )</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 pyro">
+          <input type="checkbox" id="pyro" name="Pyrogravure" />
+          <label for="pyro"> Pyrogravure</label>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 insert">
+          <input type="checkbox" id="insert" name="Insert-Bois" />
+          <label for="insert"> Insert Bois</label>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 tails">
+          <input type="checkbox" id="tail" name="Tail-Block" />
+          <label for="tail"> Tail Block</label>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 teinte">
+          <input type="checkbox" id="teinte" name="Teinte-Bois" />
+          <label for="teinte"> Teinte Bois</label>
+        </div>
+      </div>
+      <p class="disclaimer-header">* : Champs obligatoires.</p>
+      <p class="disclaimer">Les informations que vous renseignez dans ce formulaire sont strictement confidentielles et ne servent qu'à la création du devis et à la prise de contact. Ces informations ne seront en aucun cas vendu à des tiers pour utilisation commerciale ou publicitaire.</p>
+      <input class="submit-button" type="submit" value="Envoyer">
     </form>
   </div>
 
