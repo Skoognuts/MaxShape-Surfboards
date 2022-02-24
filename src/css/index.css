@@ -8,6 +8,17 @@ body {
   align-items: center;
 }
 
+h1 {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-shadow: 0 0 5px #fffefd;
+  letter-spacing: 0.5rem;
+}
+
 .index-video-loop {
   width: 90%;
   max-width: 1080px;

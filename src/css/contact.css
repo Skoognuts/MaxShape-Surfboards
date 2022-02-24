@@ -11,7 +11,9 @@ body {
 .contact {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 90%;
+  max-width: 1000px;
   background: rgba(255, 255, 255, 0.6);
   padding: 15px;
   border-radius: 20px;
@@ -33,10 +35,148 @@ body {
 form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   background: rgba(255, 255, 255, 0.6);
   padding: 15px;
   border-radius: 20px;
+}
+
+.row {
+  width: 100%;
+}
+
+input,
+.surf-level,
+.model,
+.tail,
+.rail,
+.derives,
+.deriv-box,
+.lattage {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 10px;
+}
+
+select {
+  height: 30px;
+}
+
+.double-select {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.sav,
+.pad,
+.pyro,
+.insert,
+.tails,
+.teinte {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.deco {
+  margin-bottom: 20px;
+}
+
+.sav > #sav,
+.pad > #pad,
+.pyro > #pyro,
+.insert > #insert,
+.tails > #tail,
+.teinte > #teinte {
+  width: 20px;
+  margin-bottom: 0;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.double-select-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 75%;
+  flex-wrap: nowrap;
+}
+
+#longueur,
+#largeur,
+#epaisseur {
+  width: 48%;
+}
+
+.required {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.required:after {
+  content:"*";
+  color: red;
+  margin-left: 3px;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+h4 {
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 0.9rem;
+}
+
+.disclaimer-header {
+  color: red;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.disclaimer,
+.disclaimer-header {
+  font-size: 0.6rem;
+  text-align: center;
+  max-width: 500px;
+}
+
+a,
+a:hover {
+  color: rgb(2, 62, 138);
+}
+
+.submit-button {
+  padding-inline: 20px;
+  padding-block: 10px;
+  margin-top: 30px;
+  background: rgba(50, 69, 89, 0.5);
+  border: none;
+  border-radius: 10px;
+  color: #fffefd;
+  font-weight: 700;
+  transition-duration: 250ms;
+}
+
+.submit-button:hover {
+  background: rgba(2, 62, 138, 0.5);
+  filter: drop-shadow(0 0 5px #fffefd);
+  text-shadow: 0 0 5px #2f2e2e;
 }
 
 @media screen and (min-width: 650px) {
