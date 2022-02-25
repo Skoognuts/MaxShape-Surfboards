@@ -66,6 +66,7 @@ fields:
   config: {}
   label: Galerie Image Planche
 pages:
+- src/models/eggy.md
 - src/models/one_foot.md
 - src/models/rice.md
 - src/models/toy.md
