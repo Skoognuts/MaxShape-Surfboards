@@ -28,3 +28,4 @@ fields:
   label: Image
 pages:
 - src/content/blog/blog_001.md
+- src/content/blog/blog_002.md
