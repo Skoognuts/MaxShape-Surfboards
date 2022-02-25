@@ -1,4 +1,9 @@
 ---
 label: Blog
 hide_body: true
-fields: []
+fields:
+- name: titre
+  type: text
+  config:
+    required: true
+  label: Titre
