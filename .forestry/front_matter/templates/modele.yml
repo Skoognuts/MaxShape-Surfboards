@@ -69,5 +69,6 @@ pages:
 - src/models/eggy.md
 - src/models/one_foot.md
 - src/models/rice.md
+- src/models/single.md
 - src/models/toy.md
 - src/models/vagabond.md
