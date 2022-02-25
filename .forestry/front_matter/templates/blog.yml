@@ -16,3 +16,8 @@ fields:
     schema:
       format: markdown
   label: Description
+- name: lien
+  type: text
+  config:
+    required: true
+  label: Lien
