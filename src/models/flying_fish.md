@@ -21,5 +21,6 @@ galerie_image_planche:
 - "/uploads/maxshape-flying-fish-03.jpg"
 - "/uploads/maxshape-flying-fish-04.jpg"
 - "/uploads/maxshape-flying-fish-01.png"
+id: "9"
 
 ---

@@ -20,5 +20,6 @@ image_principale_face: "/uploads/maxshape-drim-front.png"
 galerie_image_planche:
 - "/uploads/maxshape-drim-back.png"
 - "/uploads/maxshape-drim-01.jpg"
+id: "11"
 
 ---

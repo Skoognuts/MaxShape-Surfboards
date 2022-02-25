@@ -20,5 +20,6 @@ galerie_image_planche:
 - "/uploads/maxshape-ufli-01.png"
 - "/uploads/maxshape-ufli-02.png"
 - "/uploads/maxshape-ufli-03.jpg"
+id: "10"
 
 ---
