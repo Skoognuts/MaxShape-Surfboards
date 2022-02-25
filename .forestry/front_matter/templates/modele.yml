@@ -68,4 +68,5 @@ fields:
 pages:
 - src/models/one_foot.md
 - src/models/rice.md
+- src/models/toy.md
 - src/models/vagabond.md
