@@ -12,3 +12,8 @@ fields:
   config:
     required: true
   label: Prix
+- name: longueur
+  type: text
+  config:
+    required: true
+  label: Longueur
