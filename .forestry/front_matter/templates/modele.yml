@@ -65,3 +65,5 @@ fields:
   type: image_gallery
   config: {}
   label: Galerie Image Planche
+pages:
+- src/models/one_foot.md
