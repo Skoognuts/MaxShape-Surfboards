@@ -2,6 +2,11 @@
 label: Modèle
 hide_body: true
 fields:
+- name: id
+  type: text
+  config:
+    required: true
+  label: ID
 - name: titre
   type: text
   config:
