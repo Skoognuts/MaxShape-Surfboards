@@ -9,6 +9,8 @@ sections:
   label: Modèles
   create: all
   match: "**/*"
+  templates:
+  - modele
 - type: directory
   path: src/content/blog
   label: Blog
