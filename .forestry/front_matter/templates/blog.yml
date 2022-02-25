@@ -21,3 +21,8 @@ fields:
   config:
     required: true
   label: Lien
+- name: image
+  type: file
+  config:
+    maxSize: 2
+  label: Image
