@@ -25,5 +25,6 @@ galerie_image_planche:
 - "/uploads/maxshape-single-01.jpg"
 - "/uploads/maxshape-single-03.jpg"
 - "/uploads/maxshape-single-04.jpg"
+id: "6"
 
 ---
