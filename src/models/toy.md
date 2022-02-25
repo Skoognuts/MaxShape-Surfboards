@@ -14,5 +14,6 @@ description: |-
   Elle conviendra également à des surfeurs aguerris voulant s'amuser en petites conditions ou dans des vagues plus conséquentes aux départs difficiles.
 image_principale_face: "/uploads/maxshape-toy-front.png"
 galerie_image_planche: []
+id: "4"
 
 ---

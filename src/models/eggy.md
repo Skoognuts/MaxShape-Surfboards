@@ -21,5 +21,6 @@ galerie_image_planche:
 - "/uploads/maxshape-eggy-back.png"
 - "/uploads/maxshape-eggy-02.jpg"
 - "/uploads/maxshape-eggy-01.jpg"
+id: "5"
 
 ---

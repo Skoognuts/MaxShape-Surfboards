@@ -16,5 +16,6 @@ image_principale_face: "/uploads/maxshape-rice-front.png"
 galerie_image_planche:
 - "/uploads/maxshape-rice-back.png"
 - "/uploads/maxshape-rice-01.png"
+id: "3"
 
 ---
