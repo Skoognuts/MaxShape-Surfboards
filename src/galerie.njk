@@ -12,15 +12,26 @@ galeryClass: active
   <h1>GALERIE</h1>
   <div class="galery">
     <div class="galeryShow">
-      {% for photo in collections.galerie %}
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <img src="{{ photo.data.photo | url }}" alt="{{ photo.data.description | safe }}">
+      <div class="row">
+        {% for photo in collections.galerie %}
+          <div class="col-12 col-md-6 galery-item">
+            <img src="{{ photo.data.photo | url }}" alt="{{ photo.data.description | safe }}"  onclick="window.open(this.src)">
           </div>
-        </div>
-      {% endfor %}
+        {% endfor %}
+      </div>
+    </div>
   </div>
-  </div>
+
+  <nav class="navbar justify-content-center">
+    <a class="nav-link border-gold-right" href="/">HOME</a>
+    <a class="nav-link border-gold-right" href="/a-propos">À PROPOS</a>
+    <a class="nav-link border-gold-right" href="/blog">BLOG</a>
+    <a class="nav-link border-gold-right" href="/models">MODELES</a>
+    <a class="nav-link border-gold-right" href="/eco-boards">ECO-BOARDS</a>
+    <a class="nav-link active border-gold-right" href="/galerie">GALERIE</a>
+    <a class="nav-link border-gold-right" href="/contact">CONTACT</a>
+    <a class="nav-link" href="/stages">STAGES</a>
+  </nav>
 </main>
 
 {% include 'footer.njk' %}
