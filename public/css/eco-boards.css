@@ -12,7 +12,8 @@ body {
   display: flex;
   flex-direction: column;
   width: 90%;
-  background: rgba(255, 255, 255, 0.6);
+  max-width: 1000px;
+  background: rgba(255, 255, 255, 0.7);
   padding: 15px;
   border-radius: 20px;
   margin-bottom: 150px;
