@@ -67,3 +67,4 @@ fields:
   label: Galerie Image Planche
 pages:
 - src/models/one_foot.md
+- src/models/vagabond.md
