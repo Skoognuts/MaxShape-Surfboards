@@ -16,5 +16,6 @@ image_principale_face: "/uploads/maxshape-vagabond-front.png"
 galerie_image_planche:
 - "/uploads/maxshape-vagabond-back.png"
 - "/uploads/maxshape-vagabond-01.jpg"
+id: "2"
 
 ---

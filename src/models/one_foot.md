@@ -19,5 +19,6 @@ image_principale_face: "/uploads/maxshape-one-foot-front.png"
 galerie_image_planche:
 - "/uploads/maxshape-one-foot-back.png"
 - "/uploads/maxshape-one-foot-01.jpg"
+id: "1"
 
 ---
