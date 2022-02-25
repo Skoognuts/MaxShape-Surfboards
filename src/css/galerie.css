@@ -20,6 +20,12 @@ body {
   margin-bottom: 150px;
 }
 
+.galery-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 @media screen and (min-width: 650px) {
   .galery {
     padding: 25px;
