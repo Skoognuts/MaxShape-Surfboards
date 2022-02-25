@@ -22,5 +22,6 @@ image_principale_face: "/uploads/maxshape-magic-carpet-front.png"
 galerie_image_planche:
 - "/uploads/maxshape-magic-carpet-back.png"
 - "/uploads/maxshape-magic-carpet-01.png"
+id: "7"
 
 ---

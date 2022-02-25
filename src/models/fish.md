@@ -21,5 +21,6 @@ galerie_image_planche:
 - "/uploads/maxshape-fish-back.png"
 - "/uploads/maxshape-fish-01.jpg"
 - "/uploads/maxshape-fish-02.jpg"
+id: "8"
 
 ---
