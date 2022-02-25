@@ -17,3 +17,51 @@ fields:
   config:
     required: true
   label: Longueur
+- name: largeur
+  type: text
+  config:
+    required: true
+  label: Largeur
+- name: epaisseur
+  type: text
+  config:
+    required: true
+  label: Epaisseur
+- name: tail
+  type: text
+  config:
+    required: true
+  label: Tail
+- name: shape
+  type: text
+  config:
+    required: true
+  label: Shape
+- name: derives
+  type: text
+  config:
+    required: true
+  label: Dérives
+- name: niveau
+  type: text
+  config:
+    required: true
+  label: Niveau
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+- name: image_principale_face
+  type: file
+  config:
+    maxSize: 64
+  label: Image Principale Face
+- name: galerie_image_planche
+  type: image_gallery
+  config: {}
+  label: Galerie Image Planche
