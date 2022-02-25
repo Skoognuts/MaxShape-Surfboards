@@ -26,3 +26,5 @@ fields:
   config:
     maxSize: 2
   label: Image
+pages:
+- src/content/blog/blog_001.md
