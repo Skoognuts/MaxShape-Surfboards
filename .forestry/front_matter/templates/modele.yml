@@ -67,6 +67,7 @@ fields:
   label: Galerie Image Planche
 pages:
 - src/models/eggy.md
+- src/models/magic_carpet.md
 - src/models/one_foot.md
 - src/models/rice.md
 - src/models/single.md
