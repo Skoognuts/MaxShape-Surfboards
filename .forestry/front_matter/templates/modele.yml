@@ -7,3 +7,8 @@ fields:
   config:
     required: true
   label: Titre
+- name: prix
+  type: text
+  config:
+    required: true
+  label: Prix
