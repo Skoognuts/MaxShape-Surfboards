@@ -68,6 +68,7 @@ fields:
 pages:
 - src/models/eggy.md
 - src/models/fish.md
+- src/models/flying_fish.md
 - src/models/magic_carpet.md
 - src/models/one_foot.md
 - src/models/rice.md
