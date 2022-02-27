@@ -26,6 +26,11 @@ body {
   justify-content: center;
 }
 
+a,
+a:hover {
+  color: rgb(2, 62, 138);
+}
+
 @media screen and (min-width: 650px) {
   .stages {
     padding: 25px;
