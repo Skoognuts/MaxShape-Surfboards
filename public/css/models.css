@@ -1,3 +1,77 @@
 body {
   background-image: url(/assets/maxshape-background-models.jpg);
 }
+
+#models-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.models {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 15px;
+  border-radius: 20px;
+  margin-bottom: 150px;
+}
+
+.modelsShow {
+  margin-top: 30px;
+}
+
+.board-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.board-item > a {
+  color: #000000;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board-img {
+  border: none;
+  box-shadow: none;
+  margin-bottom: 10px;
+  height: 300px;
+  width: auto;
+  transition-duration: 250ms;
+}
+
+.board-img:hover {
+  filter: drop-shadow(0 0 5px #fffefd);
+  transform: scale(1.2);
+}
+
+.board-img:hover + .board-title,
+.board-img:hover ~ .board-separator {
+  display: none;
+}
+
+.board-separator {
+  width: 20px;
+  border-bottom: 1px solid #2f2e2e;
+  margin-bottom: 30px;
+}
+
+a,
+a:hover {
+  color: rgb(2, 62, 138);
+}
+
+@media screen and (min-width: 650px) {
+  .models {
+    padding: 25px;
+    margin-bottom: 30px;
+  }
+}

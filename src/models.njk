@@ -9,7 +9,35 @@ modelsClass: active
 {% include 'header.njk' %}
 
 <main id="models-content">
-  
+  <h1>MODELES</h1>
+  <div class="models">
+    <p>Voici une liste des différents modèles de planches disponibles. <strong>Chacune d'elle a ses propres caractéristiques</strong> en fonction de vos besoins et sont <strong>réalisées uniquement sur mesure</strong>. Pour plus d'informations, <a href="mailto:maxshape@hotmail.fr">contactez moi</a> ou rendez vous sur la page <a href="/contact">Contact</a> où vous trouverez un formulaire vous donnant la possibilité de choisir votre model, vos dimensions ainsi que toutes les options disponibles.</p>
+    <p>Cliquez sur un modèle pour plus de détails.</p>
+    <div class="modelsShow">
+      <div class="row">
+        {% for board in collections.models %}
+          <div class="col-12 col-md-6 col-lg-4 board-item">
+            <a href="{{ board.url }}">
+              <img class="board-img" src="{{ board.data.image_principale_face | url }}" alt="{{ board.data.titre | safe }}">
+              <p class="board-title">{{ board.data.titre | safe }}</p>
+              <div class="board-separator"></div>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar justify-content-center">
+    <a class="nav-link border-gold-right" href="/">HOME</a>
+    <a class="nav-link border-gold-right" href="/a-propos">À PROPOS</a>
+    <a class="nav-link border-gold-right" href="/blog">BLOG</a>
+    <a class="nav-link active border-gold-right" href="/models">MODELES</a>
+    <a class="nav-link border-gold-right" href="/eco-boards">ECO-BOARDS</a>
+    <a class="nav-link border-gold-right" href="/galerie">GALERIE</a>
+    <a class="nav-link border-gold-right" href="/contact">CONTACT</a>
+    <a class="nav-link" href="/stages">STAGES</a>
+  </nav>
 </main>
 
 {% include 'footer.njk' %}
