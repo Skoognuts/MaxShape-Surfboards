@@ -1,0 +1,103 @@
+---
+style: /css/models-item.css
+script: /js/models-item.js
+---
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{titre}} | Max Shape Surfboards</title>
+  <meta name="description" content="{{description | safe}}">
+  <link rel="icon" type="image/png" href="/assets/favicon.png"/>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="{{style | safe}}">
+</head>
+<body>
+  {% include 'header.njk' %}
+
+  <main id="models-item-content">
+    <h1>MODELES</h1>
+    <div class="models-item">
+      <div class="row mb-4">
+        <div class="col-12 col-lg-6 ps-lg-5">
+          <h2>{{ titre }}</h2>
+          <div class="row mb-4">
+            <div class="col-4 spec-title">
+              <h3>Longueur :</h3>
+              <h3>Largeur :</h3>
+              <h3>Epaisseur :</h3>
+              <h3>Tail :</h3>
+              <h3>Shape :</h3>
+              <h3>Dérives :</h3>
+              <h3>Niveau :</h3>
+              <h3>Prix :</h3>
+            </div>
+            <div class="col-8 spec-value">
+              <h4>{{ longueur }}</h4>
+              <h4>{{ largeur }}</h4>
+              <h4>{{ epaisseur }}</h4>
+              <h4>{{ tail }}</h4>
+              <h4>{{ shape }}</h4>
+              <h4>{{ derives }}</h4>
+              <h4>{{ niveau }}</h4>
+              <h4>{{ prix }}</h4>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-12 galery-thumbs mt-2 mt-lg-5 mb-2 mb-lg-5">
+              <div class="thumbnail" id="{{ image_principale_face | url }}" style="background-image: url({{ image_principale_face | url }}); background-size: cover;"></div>
+              {% for image in galerie_image_planche %}
+                <div class="thumbnail" id="{{ image | url }}" style="background-image: url({{ image | url }}); background-size: cover;"></div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 ps-lg-5 models-galery">
+          <img id="boardShow" class="models-item-img" src="{{ image_principale_face | url }}" alt="{{ titre }}">
+        </div>
+      </div>
+      <div class="row mb-4">
+        <p>&emsp; &emsp;{{ description }}</p>
+        <p>&emsp; &emsp; Le modèle exposé est un exemple personnalisé et n'est donc pas contractuel. Rendez-vous à la page <a href="/contact">Contact</a> pour choisir vos options, vos dimensions, vos décorations ...</p>
+      </div>
+      <div class="row justify-content-between d-none d-md-flex">
+        {% for board in collections.models %}
+          <div class="col-1 board-thumbnail">
+            <a href="{{ board.url }}">
+              <img class="board-img" src="{{ board.data.image_principale_face | url }}" alt="{{ board.data.titre | safe }}">
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="row mb-4 justify-content-between d-none d-md-flex">
+        {% for board in collections.models %}
+          <div class="col-1 board-thumbnail-title">
+            <a href="{{ board.url }}">
+              <p class="board-title">{{ board.data.titre | safe }}</p>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <nav class="navbar justify-content-center">
+      <a class="nav-link border-gold-right" href="/">HOME</a>
+      <a class="nav-link border-gold-right" href="/a-propos">À PROPOS</a>
+      <a class="nav-link border-gold-right" href="/blog">BLOG</a>
+      <a class="nav-link border-gold-right" href="/models">MODELES</a>
+      <a class="nav-link border-gold-right" href="/eco-boards">ECO-BOARDS</a>
+      <a class="nav-link border-gold-right" href="/galerie">GALERIE</a>
+      <a class="nav-link border-gold-right" href="/contact">CONTACT</a>
+      <a class="nav-link" href="/stages">STAGES</a>
+    </nav>
+  </main>
+
+{% include 'footer.njk' %}
+  <script src="/css/bootstrap.bundle.min.js"></script>
+  <script type="module" src="{{ script | safe }}"></script>
+</body>
+</html>
