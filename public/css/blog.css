@@ -1,3 +1,46 @@
 body {
   background-image: url(/assets/maxshape-background-blog.jpg);
 }
+
+#blog-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 15px;
+  border-radius: 20px;
+  margin-bottom: 150px;
+}
+
+.blog-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-separator {
+  width: 50%;
+  height: 30px;
+  border-bottom: 2px dotted rgb(2, 62, 138);
+  margin-bottom: 30px;
+}
+
+a,
+a:hover {
+  color: rgb(2, 62, 138);
+}
+
+@media screen and (min-width: 650px) {
+  .blog {
+    padding: 25px;
+    margin-bottom: 30px;
+  }
+}

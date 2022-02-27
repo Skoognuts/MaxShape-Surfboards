@@ -9,7 +9,49 @@ blogClass: active
 {% include 'header.njk' %}
 
 <main id="blog-content">
-  
+  <h1>BLOG</h1>
+  <div class="blog">
+    {% for article in collections.blog %}
+      {% if loop.index % 2 === 0 %}
+        <div class="row">
+          <div class="col-12 col-lg-7 blog-item">
+            <img src="{{ article.data.image | url }}" alt="{{ article.data.titre | safe }}">
+          </div>
+          <div class="col-12 col-lg-5 pe-lg-5">
+            <h2>{{ article.data.titre | safe }}</h2>
+            <p>{{ article.data.description | safe }}</p>
+            <p><a href="{{ article.data.lien | url }}" target="_blank">Lire l'article</a></p>
+          </div>
+        </div>
+      {% endif %}
+      {% if loop.index % 2 !== 0 %}
+        <div class="row">
+          <div class="col-12 col-lg-5 ps-lg-5">
+            <h2>{{ article.data.titre | safe }}</h2>
+            <p>{{ article.data.description | safe }}</p>
+            <p><a href="{{ article.data.lien | url }}" target="_blank">Lire l'article</a></p>
+          </div>
+          <div class="col-12 col-lg-7 blog-item">
+            <img src="{{ article.data.image | url }}" alt="{{ article.data.titre | safe }}">
+          </div>
+        </div>
+      {% endif %}
+      {% if not loop.last %}
+        <div class="blog-separator"></div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <nav class="navbar justify-content-center">
+    <a class="nav-link border-gold-right" href="/">HOME</a>
+    <a class="nav-link border-gold-right" href="/a-propos">À PROPOS</a>
+    <a class="nav-link active border-gold-right" href="/blog">BLOG</a>
+    <a class="nav-link border-gold-right" href="/models">MODELES</a>
+    <a class="nav-link border-gold-right" href="/eco-boards">ECO-BOARDS</a>
+    <a class="nav-link border-gold-right" href="/galerie">GALERIE</a>
+    <a class="nav-link border-gold-right" href="/contact">CONTACT</a>
+    <a class="nav-link" href="/stages">STAGES</a>
+  </nav>
 </main>
 
 {% include 'footer.njk' %}
