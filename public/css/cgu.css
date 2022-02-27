@@ -12,6 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 90%;
+  max-width: 1000px;
   background: rgba(255, 255, 255, 0.7);
   padding: 15px;
   margin-bottom: 150px;
@@ -26,5 +27,6 @@ a:hover {
 @media screen and (min-width: 650px) {
   .cgus {
     padding: 25px;
+    margin-bottom: 30px;
   }
 }
