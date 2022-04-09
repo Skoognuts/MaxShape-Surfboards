@@ -1,6 +1,6 @@
 ---
 titre: Flying Fish
-prix: 850,00 €
+prix: 870,00 €
 longueur: 5'8" - 6'6"
 largeur: 19"3/4 - 21"1/2
 epaisseur: 2"3/8 - 2"7/8
