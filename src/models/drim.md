@@ -1,6 +1,6 @@
 ---
 titre: Drim
-prix: 800,00 €
+prix: 820,00 €
 longueur: 5'6" - 6'2"
 largeur: 19" - 20"1/2
 epaisseur: 2"3/8 - 2"3/4
