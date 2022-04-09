@@ -1,6 +1,6 @@
 ---
 titre: Eggy
-prix: 840,00 €
+prix: 860,00 €
 longueur: 6'0" - 6'8"
 largeur: 21"1/2 - 22"1/2
 epaisseur: 2"5/8 - 3"
