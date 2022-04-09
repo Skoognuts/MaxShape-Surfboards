@@ -1,6 +1,6 @@
 ---
 titre: Ufli
-prix: 800,00 €
+prix: 820,00 €
 longueur: 5'8" - 6'4"
 largeur: 18"3/4 - 20"
 epaisseur: 2"3/8 - 2"3/4

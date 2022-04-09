@@ -1,6 +1,6 @@
 ---
 titre: Vagabond
-prix: 1 050,00 €
+prix: 1 150,00 €
 longueur: 9'0" - 9'6"
 largeur: 22"1/2 - 23"3/4
 epaisseur: 2"7/8 - 3"1/2

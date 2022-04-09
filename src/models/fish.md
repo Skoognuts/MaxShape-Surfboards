@@ -1,6 +1,6 @@
 ---
 titre: Fish
-prix: 830,00 €
+prix: 850,00 €
 longueur: 5'4" - 6'0"
 largeur: 20"1/2 - 22"
 epaisseur: 2"1/2 - 3"

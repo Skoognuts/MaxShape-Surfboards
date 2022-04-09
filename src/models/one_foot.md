@@ -1,6 +1,6 @@
 ---
 titre: One Foot
-prix: 1 050,00 €
+prix: 1 150,00 €
 longueur: 9'0" - 9'6"
 largeur: 22"3/4 - 23"1/2
 epaisseur: 2"7/8 - 3"1/2
