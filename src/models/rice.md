@@ -1,6 +1,6 @@
 ---
 titre: Rice
-prix: 1 050,00 €
+prix: 1 150,00 €
 longueur: 9'0" - 9'6"
 largeur: 21" - 22"1/4
 epaisseur: 2"5/8 - 3"
