@@ -1,6 +1,6 @@
 ---
 titre: Single
-prix: 880,00 €
+prix: 900,00 €
 longueur: 6'2" - 7'0"
 largeur: 20" - 21"1/2
 epaisseur: 2"1/2 - 2"7/8
