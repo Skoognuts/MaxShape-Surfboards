@@ -1,6 +1,6 @@
 ---
 titre: Toy
-prix: 940,00 €
+prix: 990,00 €
 longueur: 7'0" - 8'0"
 largeur: 21"1/2 - 22"1/4
 epaisseur: 2"5/8 - 3"
