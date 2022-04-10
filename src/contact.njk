@@ -129,6 +129,9 @@ contactClass: active
         <div class="col-12 col-md-6">
           <select name="Modele" class="model">
             <option value="Aucun">Modèle</option>
+            {% for board in collections.models %}
+              <option value="{{ board.data.titre }}">{{ board.data.titre }} - {{ board.data.prix }}</option>
+            {% endfor %}
             <option value="One Foot">One Foot - 1150€</option>
             <option value="Vagabond">Vagabond - 1150€</option>
             <option value="Rice">Rice - 1150€</option>
