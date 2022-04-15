@@ -1,5 +1,5 @@
 ---
-titre: Jarvis
+titre: Vagabond
 prix: 1 150,00 €
 longueur: 9'0" - 9'6"
 largeur: 22"1/2 - 23"3/4
